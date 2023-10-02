@@ -1,88 +1,116 @@
-# ML-Project
+# The Modernist theme
 
-Snakes ML project for CS 4641
+[![.github/workflows/ci.yaml](https://github.com/pages-themes/modernist/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/modernist/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-modernist.svg)](https://badge.fury.io/rb/jekyll-theme-modernist)
 
+*Modernist is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/modernist), or even [use it today](#usage).*
 
-# Proposal
-**Introduction**
+![Thumbnail of Modernist](thumbnail.png)
 
-Snakes are among the top three most dangerous creatures, and identification is very
-difficult, often relying on strong herpetological skills that require identification by characteristics
-such as head shape and body pattern or colour[3] . This approach has its limitations, and by
-automating the identification process, it will be easier for people to avoid venomous snakes
-while also helping healthcare providers provide better treatment.
+## Usage
 
-The use of ML algorithms has the potential to greatly increase the accuracy of snake
-identification, and these algorithms have the potential to mitigate the negative impacts of
-mistreatment of snake bites. It is very important to understand whether a given snake is
-venomous or not since diagnosis and treatment differ greatly between the two [1] . Studies have
-found that 12% of nonvenomous snakebites were treated as if there were necrosis [2] , and this
-number can be greatly decreased by these algorithms.
+To use the Modernist theme:
 
-There are other benefits in the healthcare industry as well. These algorithms have the
-potential to be a low-cost alternative to having skilled individuals classify snakes, helping to
-provide aid to healthcare providers in low-resource settings. Snake venom is also a sought-after
-drug, and classifying a snake could help scientists quickly find which snakes are useful for
-harvesting venom [2] . Furthermore, efficient classification could also help zoologists and
-conservationists alike better understand snake populations around the globe.
+1. Add the following to your site's `_config.yml`:
 
+    ```yml
+    remote_theme: pages-themes/modernist@v0.2.0
+    plugins:
+    - jekyll-remote-theme # add this line to the plugins list if you already have one
+    ```
 
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
-**Problem Definition**
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
-Accurate classification of snakes is important for identifying how venomous or
-nonvenomous the creature is to humans. The goal of this project is to identify snake species
-quickly and accurately, minimising false negatives and false positives to ensure accurate
-identification.
+## Customizing
 
-Our dataset has 135 different species of snakes using 24,000 images from a Kaggle dataset. Each
-image is labelled by the binomial name for the snake, the country where it is found, the
-continent, genus, family, and sub-family
+### Configuration variables
 
+Modernist will respect the following variables, if set in your site's `_config.yml`:
 
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
+```
 
-**Methods**
+Additionally, you may choose to set the following optional variables:
 
-We are planning on using CNN, Decision Tree, and K-Means Algorithm (scikit-learn) to
-accomplish this task. CNN is a traditional algorithm used for image classification, and using it
-will likely yield the most accurate results. It will be interesting to compare the results with the K-
-means algorithm and see how it compares with CNN, as it’s a much simpler clustering algorithm
-that can be used to divide the dataset into different categories based on species.
+```yml
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
 
+### Stylesheet
 
+If you'd like to add your own custom styles:
 
-**Potential Results, Metrics**
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
-A confusion matrix will be used to evaluate the classification accuracy of a given
-algorithm, and precision-recall curves will be used to measure the false positive and false
-negative rates of these different algorithms. Along with this, we will use the F1 score to
-determine how accurate each model is.
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
+### Layouts
 
-**Checkpoint**
+If you'd like to change the theme's HTML layout:
 
-We now have a problem and the motivation for it. We have our dataset and we have three
-methods we will use to analyse the dataset and train our model – These methods and metrics
-allow us to compare how the different algorithms compare when solving the same problem, and
-we are ready to move on to preparing the data and using it to train our model.
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/modernist/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/modernist/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/pages-themes/modernist/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site
+4. Paste the default layout content copied in the first step
+5. Customize the layout as you'd like
 
-**References**
-[1.] Niteesh., I., Venkat.A, M. S., Vahed., S., Dattu.P, N., &amp; Srilatha., M. (2021). Classification
-and prediction of snake species based on snakes’ visual features using machine learning. 2021
-2nd Global Conference for Advancement in Technology (GCAT).
-https://doi.org/10.1109/gcat52182.2021.9587711
-[2.] Progga, N. I., Rezoana, N., Hossain, M. S., Islam, R. U., &amp; Andersson, K. (2021). A CNN
-based model for venomous and non-venomous snake classification. Applied Intelligence and
-Informatics, 216–231. https://doi.org/10.1007/978-3-030-82269-9_17
-[3.] Rajabizadeh, M., &amp; Rezghi, M. (2021). A comparative study on image-based snake
-identification using machine learning. Scientific Reports, 11(1). https://doi.org/10.1038/s41598-
-021-96031-1
+### Customizing Google Analytics code
 
-| Name | Contribution |
-| --- | --- |
-| Jadon Co | *Discussing potential results and performance metrics *Creating GitHub Repository *Recording audio for proposal video presentation |
-| Robert Jeon | *Recording audio for proposal video presentation |
-| David Qu | *Finding references on the topic |
-| Jehyeok Woo | *Recording audio for proposal video presentation *Helping to populate GitHub page |
+Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
 
+### Overriding GitHub-generated URLs
+
+Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+
+1. Look at [the template source](https://github.com/pages-themes/modernist/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+
+*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+
+For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/modernist/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Modernist theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Contributing
+
+Interested in contributing to Modernist? We'd love your help. Modernist is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+### Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/modernist`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+### Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
