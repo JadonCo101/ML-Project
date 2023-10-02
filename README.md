@@ -4,7 +4,8 @@ Snakes ML project for CS 4641
 
 
 # Proposal
-Introduction
+**Introduction**
+
 Snakes are among the top three most dangerous creatures, and identification is very
 difficult, often relying on strong herpetological skills that require identification by characteristics
 such as head shape and body pattern or colour [3] . This approach has its limitations, and by
@@ -26,7 +27,8 @@ harvesting venom [2] . Furthermore, efficient classification could also help zoo
 conservationists alike better understand snake populations around the globe.
 
 
-** Problem Definition
+**Problem Definition**
+
 Accurate classification of snakes is important for identifying how venomous or
 nonvenomous the creature is to humans. The goal of this project is to identify snake species
 quickly and accurately, minimising false negatives and false positives to ensure accurate
@@ -36,26 +38,29 @@ Our dataset has 135 different species of snakes using 24,000 images from a Kaggl
 image is labelled by the binomial name for the snake, the country where it is found, the
 continent, genus, family, and sub-family
 
-** Methods
+**Methods**
+
 We are planning on using CNN, Decision Tree, and K-Means Algorithm (scikit-learn) to
 accomplish this task. CNN is a traditional algorithm used for image classification, and using it
 will likely yield the most accurate results. It will be interesting to compare the results with the K-
 means algorithm and see how it compares with CNN, as it’s a much simpler clustering algorithm
 that can be used to divide the dataset into different categories based on species.
 
-**Potential Results, Metrics
+**Potential Results, Metrics**
+
 A confusion matrix will be used to evaluate the classification accuracy of a given
 algorithm, and precision-recall curves will be used to measure the false positive and false
 negative rates of these different algorithms. Along with this, we will use the F1 score to
 determine how accurate each model is.
 
-**Checkpoint
+**Checkpoint**
+
 We now have a problem and the motivation for it. We have our dataset and we have three
 methods we will use to analyse the dataset and train our model – These methods and metrics
 allow us to compare how the different algorithms compare when solving the same problem, and
 we are ready to move on to preparing the data and using it to train our model.
 
-**References
+**References**
 [1] Niteesh., I., Venkat.A, M. S., Vahed., S., Dattu.P, N., &amp; Srilatha., M. (2021). Classification
 and prediction of snake species based on snakes’ visual features using machine learning. 2021
 2nd Global Conference for Advancement in Technology (GCAT).
@@ -66,20 +71,11 @@ Informatics, 216–231. https://doi.org/10.1007/978-3-030-82269-9_17
 [3] Rajabizadeh, M., &amp; Rezghi, M. (2021). A comparative study on image-based snake
 identification using machine learning. Scientific Reports, 11(1). https://doi.org/10.1038/s41598-
 021-96031-1
-Contribution Table:
-Jaden Co  Discussing potential results and performance metrics
 
- Creating GitHub Repository
- Recording audio for proposal video presentation
-Robert Jeon  Recording audio for proposal video presentation
-Karan Patel  Finding viable dataset
+| Name | Contribution |
+| --- | --- |
+| Jadon Co | * Discussing potential results and performance metrics * Creating GitHub Repository * Recording audio for proposal video presentation |
+| Robert Jeon | * Recording audio for proposal video presentation |
+| David Qu | * Finding references on the topic |
+| Jehyeok Woo | * Recording audio for proposal video presentation * Helping to populate GitHub page |
 
- Recording audio for proposal video presentation
-
-David Qu  Finding references on the topic
-
- Writing introduction and background, problem definition
- Recording audio for proposal video presentation
-Jehyeok Woo  Recording audio for proposal video presentation
-
- Helping to populate GitHub page
