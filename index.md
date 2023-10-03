@@ -92,6 +92,6 @@ Contribution Table:
 
 **Propsed Timeline**
 
-![Proposed Timeline](https://github.com/JadonCo101/ML-Project/excelchart.png)
+![Proposed Timeline](https://github.com/JadonCo101/ML-Project/blob/cf9276496f3589cd852cccc02df409e7b9389cc8/excelchart.png)
 
 
