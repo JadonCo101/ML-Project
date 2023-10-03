@@ -1,5 +1,7 @@
 **Introduction**
 
+Data: [Data of Snakes](https://www.kaggle.com/datasets/goelyash/165-different-snakes-species/data)
+
 Snakes are among the top three most dangerous creatures, and identification is very
 difficult, often relying on strong herpetological skills that require identification by characteristics
 such as head shape and body pattern or colour [3] . This approach has its limitations, and by
@@ -88,6 +90,7 @@ Contribution Table:
 
 
 **Propsed Timeline**
-<img width="1352" alt="excelchart" src="https://github.com/JadonCo101/ML-Project/excelchart>
+
+![Proposed Timeline](https://github.com/JadonCo101/ML-Project/main/excelchart.png)
 
 
