@@ -83,7 +83,8 @@ Contribution Table:
 
 | Name | Contribution |
 | --- | --- |
-| Jadon Co | *Discussing potential results and performance metrics *Creating GitHub Repository * Recording audio for proposal video presentation |
+| Jadon Co | *Discussing potential results and performance metrics *Creating GitHub Repository *Recording audio for proposal video presentation |
+| Karan Patel | *Finding viable dataset *Recording audio for proposal video presentation |
 | Robert Jeon | *Recording audio for proposal video presentation |
 | David Qu | *Finding references on the topic |
 | Jehyeok Woo | *Recording audio for proposal video presentation *Helping to populate GitHub page |
@@ -91,6 +92,6 @@ Contribution Table:
 
 **Propsed Timeline**
 
-![Proposed Timeline](https://github.com/JadonCo101/ML-Project/blob/ae50189d216f547c064c8219298407a77c445999/excelchart.png)
+![Proposed Timeline](https://github.com/JadonCo101/ML-Project/excelchart.png)
 
 
