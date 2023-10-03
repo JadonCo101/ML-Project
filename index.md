@@ -1,6 +1,6 @@
 **Introduction**
 
-Data: [Data of Snakes](https://www.kaggle.com/datasets/goelyash/165-different-snakes-species/data)
+Snakes: [Dataset](https://www.kaggle.com/datasets/goelyash/165-different-snakes-species/data)
 
 Snakes are among the top three most dangerous creatures, and identification is very
 difficult, often relying on strong herpetological skills that require identification by characteristics
