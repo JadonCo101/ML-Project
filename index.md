@@ -92,6 +92,6 @@ Contribution Table:
 
 **Propsed Timeline**
 
-![Timeline](/ML-Project/blob/cf9276496f3589cd852cccc02df409e7b9389cc8/excelchart.png)
+![Timeline](https://raw.githubusercontent.com/JadonCo101/ML-Project/daniel_test/excelchart.pngtoken=GHSAT0AAAAAACINH6ZHXVWMZ2FEGFF7TEEWZI4TQHQ))
 
 
