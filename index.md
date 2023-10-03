@@ -1,4 +1,3 @@
-Introduction
 **Introduction**
 
 Snakes are among the top three most dangerous creatures, and identification is very
@@ -64,13 +63,19 @@ we are ready to move on to preparing the data and using it to train our model.
 
 
 **References**
+
 [1] Niteesh., I., Venkat.A, M. S., Vahed., S., Dattu.P, N., &amp; Srilatha., M. (2021). Classification
 and prediction of snake species based on snakes’ visual features using machine learning. 2021
 2nd Global Conference for Advancement in Technology (GCAT).
+https://doi.org/10.1109/gcat52182.2021.9587711
+
+[2] Progga, N. I., Rezoana, N., Hossain, M. S., Islam, R. U., &amp; Andersson, K. (2021). A CNN
+based model for venomous and non-venomous snake classification. Applied Intelligence and
+Informatics, 216–231. https://doi.org/10.1007/978-3-030-82269-9_17
+
 [3] Rajabizadeh, M., &amp; Rezghi, M. (2021). A comparative study on image-based snake
 identification using machine learning. Scientific Reports, 11(1). https://doi.org/10.1038/s41598-
 021-96031-1
-
 
 Contribution Table:
 
@@ -81,4 +86,8 @@ Contribution Table:
 | David Qu | *Finding references on the topic |
 | Jehyeok Woo | *Recording audio for proposal video presentation *Helping to populate GitHub page |
 
- Helping to populate GitHub page
+
+**Propsed Timeline**
+<img width="1352" alt="excelchart" src="https://github.com/JadonCo101/ML-Project/excelchart>
+
+
