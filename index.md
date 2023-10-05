@@ -79,7 +79,7 @@ Informatics, 216–231. https://doi.org/10.1007/978-3-030-82269-9_17
 identification using machine learning. Scientific Reports, 11(1). https://doi.org/10.1038/s41598-
 021-96031-1
 
-Contribution Table:
+**Contribution Table:**
 
 | Name | Contribution |
 | --- | --- |
