@@ -4,19 +4,19 @@ Snakes: [Dataset](https://www.kaggle.com/datasets/goelyash/165-different-snakes-
 
 Snakes are among the top three most dangerous creatures, and identification is very
 difficult, often relying on strong herpetological skills that require identification by characteristics
-such as head shape and body pattern or colour [3] . This approach has its limitations, and by
+such as head shape and body colour [3] . This approach has limitations, and by
 automating the identification process, it will be easier for people to avoid venomous snakes
 while also helping healthcare providers provide better treatment.
 
-The use of ML algorithms has the potential to greatly increase the accuracy of snake
-identification, and these algorithms have the potential to mitigate the negative impacts of
-mistreatment of snake bites. It is very important to understand whether a given snake is
-venomous or not since diagnosis and treatment differ greatly between the two [1] . Studies have
-found that 12% of nonvenomous snakebites were treated as if there were necrosis [2] , and this
-number can be greatly decreased by these algorithms.
+The use of ML algorithms can greatly increase the accuracy of snake identification, and these 
+algorithms have the potential to mitigate the negative impacts of mistreatment of snake bites. 
+It is very important to understand whether a given snake is venomous or not since diagnosis and 
+treatment differ greatly between the two [1] . Studies have found that 12% of nonvenomous 
+snakebites were treated as if there were necrosis [2] , and this number can be greatly 
+decreased by these algorithms.
 
-There are other benefits in the healthcare industry as well. These algorithms have the
-potential to be a low-cost alternative to having skilled individuals classify snakes, helping to
+There are other benefits in the healthcare industry as well. These algorithms can be a 
+low-cost alternative to having skilled individuals classify snakes, helping to
 provide aid to healthcare providers in low-resource settings. Snake venom is also a sought-after
 drug, and classifying a snake could help scientists quickly find which snakes are useful for
 harvesting venom [2] . Furthermore, efficient classification could also help zoologists and
@@ -33,7 +33,7 @@ identification.
 
 Our dataset has 135 different species of snakes using 24,000 images from a Kaggle dataset. Each
 image is labelled by the binomial name for the snake, the country where it is found, the
-continent, genus, family, and sub-family
+continent, genus, family, and sub-family.
 
 
 
@@ -58,7 +58,7 @@ determine how accurate each model is.
 
 **Checkpoint**
 
-We now have a problem and the motivation for it. We have our dataset and we have three
+We now have a problem and the motivation. We have our dataset and we have three
 methods we will use to analyse the dataset and train our model – These methods and metrics
 allow us to compare how the different algorithms compare when solving the same problem, and
 we are ready to move on to preparing the data and using it to train our model.
