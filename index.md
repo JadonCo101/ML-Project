@@ -117,7 +117,7 @@ continent, genus, family, and sub-family.</p>
 
 <h4><ins>Updated Gantt Chart</ins></h4>
 
-![Timeline](excelchart.png)
+![Timeline](ExcelChart.png)
 
 
 <h4><ins>References</ins></h4>
