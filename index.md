@@ -47,7 +47,7 @@ continent, genus, family, and sub-family.</p>
 
      <p align="justify">All the images in the original dataset were of various shapes and sizes. To make the data usable for training on our model, we had to resize each individual image to a uniform size of (256, 256, 3). The result of resizing the images is illustrated below:</p>
 
-     IMAGES GO HERE
+     ![Resizing Images](Resize.png)
      
   3. <p align="justify"><ins>Normalising Pixel Values</ins></p>
     
@@ -56,15 +56,15 @@ continent, genus, family, and sub-family.</p>
 
      <p align="justify">Lastly, as part of the unsupervised learning methods and data pre-processing, we utilised PCA to reduce the dimensions of the data in hopes of making the model more efficient and less computationally-expensive. Before applying PCA, we had to check how many features could be retained so that the explained variance would still be 95%. To do this, we first split each image into 3 channels: Red, Green, Blue. The image of the data split into its 3 respective channels is below:</p>
 
-     IMAGES GO HERE
+     ![RGB Channels](Split.png)
 
-     <p align="justify">We then transformed the data into fewer and fewer components, and along the way, we checked the sum of the explained variance ratios of the PCA components. In the end, we kept 30 principal components to ensure 95% retained variance.  The bar charts visualising the explained variance ration by each eigenvalue for each of the 3 channels is below:</p>
+     <p align="justify">We then transformed the data into fewer and fewer components, and along the way, we checked the sum of the explained variance ratios of the PCA components. In the end, we kept 30 principal components to ensure 95% retained variance.  The bar charts visualising the explained variance ratio by each eigenvalue for each of the 3 channels is below:</p>
 
-     IMAGES GO HERE
+     ![Variance Ratio Chart](BarChart.png)
 
 <p align="justify">The result of the data pre-processing can be found below:</p>
 
-IMAGES GO HERE
+![PCA Results](PCA.png)
 
 <p align="justify">Once the data was cleaned and structured, we were ready to begin using it to train our models. To facilitate better visualisations, in place of the snake name, labels were used. The mapping is given below:</p>
 
@@ -88,16 +88,16 @@ IMAGES GO HERE
 
 <p align="justify">To implement this method, we used the keras package to create the neural network. To cut down on computation time, we used 10 classes to test and train the model, and through our testing, we found that accuracy remained around 98 percent for test data and 88 percent for train data. Here is the structure we used for the model:</p>
 
-IMAGE HERE
+![CNN Model](CNN.Plot.png)
 
 <p align="justify">The network we used has sequential layers, meaning that the output from the previous layer is used as the input for the next layer of the model. For the hidden layers in our model, we alternated between convolutional and max pooling layers. To start, we used 32 filters to capture the details within the image since many of our images had snakes that were hard to see or slightly concealed by the image background. Later on, we would decrease this to 16 to capture the general essence of the image. For this model, max pooling was utilised since it captures the most essential pieces of the image. The data was also flattened in our model. After this, we utilised dense layers: these were used to distinguish the images more clearly. The final dense layer has 10 nodes, matching the number of classes of snakes, and we utilised an activation layer with softmax activation function to help classify the images. With this model, we were able to attain 98% accuracy in the training data and 88% accuracy in the testing data. In total, we used 12 Epochs, as it seemed appropriate given the size of the data as to prevent overfitting. As expected, the training data accuracy is slightly higher than the testing data accuracy, but they are close enough, so there is a minimal amount of overfitting in our model. The accuracy and loss functions are plotted below:</p>
 
-IMAGE HERE
+![Accuracy and Loss](CNN.Accuracy.Loss.png)
 
 <p align="justify">Looking at our confusion matrix and precision-recall curves below, it seems that for most species in our training dataset, our model was consistent in labelling what they were. The model seemed to struggle with Carphophis vermis and Ophiophagus hannah, as illustrated in both the precision-recall curve and confusion matrix. This does make sense, as looking at the images in the dataset, there are definitely similarities between the two species in terms of their images. If more species are added in future iterations of this project, it will likely be less of an issue. Given the visual similarities of all the snakes in the images as well as the similarities within the various backgrounds of the images in our dataset, it is surprising that there is very little error present in our results at this time.</p>
 
-IMAGE HERE
-IMAGE HERE
+![Confusion Matrix](CNN.Confusion.png)
+<h1>IMAGE HERE STILL MISSING</h1>
 
 <h1><ins>Results and Discussion</ins></h1>
 <p align="justify">The model achieved an astounding accuracy level of 88.13%, and the precision, recall, and f1 score were 98.89%, 92.87%, and 96.30% respectively. These results indicate that the CNN model does extremely well in the task of classifying snakes based on image data, and the model’s ability to learn hierarchical features from images along with the utilisation of convolutional and pooling layers, regularisation, and activation functions seemed to contribute to its strong ability to accurately identify snakes based on their image data. If this model were to be refined even further, it is likely that there would be an even higher accuracy score and even better identification outcomes.</p><br>
@@ -105,22 +105,22 @@ IMAGE HERE
 <hr>
 
 
-<h6><ins>Contribution Table</ins></h6>
+<h4><ins>Contribution Table</ins></h4>
 
 | Name | Contribution |
 | --- | --- |
-| Jadon Co | <ul> <li>Building and Training CNN Model</li> <li>Applying PCA to Dataset</li> |
-| Robert Jeon | <ul> <li>Model selection</li> <li>Managing Github Page</li> <li>Helping to build CNN Model</li> |
-| Karan Patel | <ul> <li>Data sourcing and Cleaning</li> <li>Applying PCA to Datase</li> |
-| David Qu | <ul> <li>Data resizing and normalisation</li> <li>Results and Discussion</li> <li>Writing up midterm report </li>|
-| Jehyeok Woo | <ul> <li>Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision-Recall Curve)</li> <li>Data Visualisation for midterm report |
+| Jadon Co | •	Building and training CNN model <br> •	Applying PCA to dataset |
+| Robert Jeon | •	Managing GitHub page <br> •	Helping to build CNN model  |
+| Karan Patel | •	Data sourcing and cleaning <br> •	Applying PCA to dataset  |
+| David Qu |•	Data resizing and normalisation <br> •	Results and Discussion <br> •	Writing up midterm report  |
+| Jehyeok Woo | •	Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision-Recall Curve) <br> •	Data visualisation for midterm report |
 
-<h6><ins>Gantt Chart</ins></h6>
+<h4><ins>Updated Gantt Chart</ins></h4>
 
 ![Timeline](excelchart.png)
 
 
-<h6><ins>References</ins></h6>
+<h4><ins>References</ins></h4>
 
 [1] Niteesh., I., Venkat.A, M. S., Vahed., S., Dattu.P, N., &amp; Srilatha., M. (2021). Classification
 and prediction of snake species based on snakes’ visual features using machine learning. 2021
