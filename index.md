@@ -118,7 +118,7 @@ continent, genus, family, and sub-family.</p>
 | Robert Jeon | •	Managing GitHub page <br> •	Helping to build CNN model  |
 | Karan Patel | •	Data sourcing and cleaning <br> •	Applying PCA to dataset  |
 | David Qu |•	Data resizing and normalisation <br> •	Results and Discussion <br> •	Writing up midterm report  |
-| Jehyeok Woo | •	Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision-Recall Curve) <br> •	Data visualisation for midterm report |
+| Jehyeok Woo | •	Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision and Recall) <br> •	Data visualisation for midterm report |
 
 <h4><ins>Updated Gantt Chart</ins></h4>
 
