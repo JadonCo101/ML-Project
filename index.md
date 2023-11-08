@@ -109,7 +109,7 @@ continent, genus, family, and sub-family.</p>
 
 
 <h1><ins>Next Steps</ins></h1>
-As of right now, the CNN algorithm has already been implemented, and we are now going to focus on implementing the Decision Tree algorithm and K-Means algorithm to classify the images in our dataset. Implementing these other methods will give us something to compare the CNN implementation to, and it will be interesting to see how the accuracy of the CNN algorithm compares to the accuracy of both the Decision Tree and K-Means algorithms. For the next steps, we will focus on implementing these next two algorithms, and once they are implemented, we will focus on comparing and contrasting the differing algorithms and analysing the strengths and weaknesses of all three algorithms for the task presented in the problem statement above.
+<p align="justify">As of right now, the CNN algorithm has already been implemented, and we are now going to focus on implementing the Decision Tree algorithm and K-Means algorithm to classify the images in our dataset. Implementing these other methods will give us something to compare the CNN implementation to, and it will be interesting to see how the accuracy of the CNN algorithm compares to the accuracy of both the Decision Tree and K-Means algorithms. For the next steps, we will focus on implementing these next two algorithms, and once they are implemented, we will focus on comparing and contrasting the differing algorithms and analysing the strengths and weaknesses of all three algorithms for the task presented in the problem statement above.</p>
 
 <hr>
 
