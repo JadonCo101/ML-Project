@@ -98,7 +98,7 @@ continent, genus, family, and sub-family.</p>
 
 ![Confusion Matrix](CNN.Confusion.png)
 
-<h1><ins>Results and Discussion</ins></h1>
+<h4><ins>Results and Discussion</ins></h4>
 <p align="justify">The model achieved an astounding accuracy level of 88.13%, and the precision, recall, and f1 score were 99.89%, 92.87%, and 96.30% respectively. These results indicate that the CNN model does extremely well in the task of classifying snakes based on image data, and the model’s ability to learn hierarchical features from images along with the utilisation of convolutional and pooling layers, regularisation, and activation functions seemed to contribute to its strong ability to accurately identify snakes based on their image data. If this model were to be refined even further, it is likely that there would be an even higher accuracy score and even better identification outcomes.</p><br>
 
 <h2><i>Supervised Learning</i></h2>
