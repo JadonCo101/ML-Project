@@ -101,6 +101,12 @@ continent, genus, family, and sub-family.</p>
 <h1><ins>Results and Discussion</ins></h1>
 <p align="justify">The model achieved an astounding accuracy level of 88.13%, and the precision, recall, and f1 score were 99.89%, 92.87%, and 96.30% respectively. These results indicate that the CNN model does extremely well in the task of classifying snakes based on image data, and the model’s ability to learn hierarchical features from images along with the utilisation of convolutional and pooling layers, regularisation, and activation functions seemed to contribute to its strong ability to accurately identify snakes based on their image data. If this model were to be refined even further, it is likely that there would be an even higher accuracy score and even better identification outcomes.</p><br>
 
+<h2><i>Supervised Learning</i></h2>
+<p align="justify">When first downloading our dataset, all of the snake species images were already separated out into their respective folders based on the label for the given snake species. Because of this, it is much easier to levrage unsupervised learning methods for the problem introduced in the problem statement above, as the number of clusters can be deterministically set for methods such as K-Means.</p>
+<h3>PCA</h3>
+<p align="justify">For data-preprocessing, we leveraged PCA, or Principal Component Analysis, to reduce the number of dimensions in the image data. PCA is a technique traditionally used in machine learning for dimensionality reduction, and we utilised it to decrease the number of components in our original images. To accomplish this, we first determined the number of principal components that we needed to keep in order to retain 95% of the original variance in the data. To do this, we realised that we needed to keep 30 principal components to retain 95% of the original variance. Thus, we used the PCA implementation from Scikit-Learn with 30 components.</p>
+<p align="justify">After performing PCA and printing out the original image and resulting image side-by-side, it was amazing how much of the original detail from the original image was preserved in the transformed image. Furthermore, by performing PCA, we had reduced the size of the data down from 3GB to only a few hundred MB. This reduction in dimensionality from PCA will help to improve the efficiency of the model as well as reduce the computational overhead needed to train and run these models.</p>
+
 <hr>
 
 
