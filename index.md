@@ -107,6 +107,10 @@ continent, genus, family, and sub-family.</p>
 <p align="justify">For data-preprocessing, we leveraged PCA, or Principal Component Analysis, to reduce the number of dimensions in the image data. PCA is a technique traditionally used in machine learning for dimensionality reduction, and we utilised it to decrease the number of components in our original images. To accomplish this, we first determined the number of principal components that we needed to keep in order to retain 95% of the original variance in the data. To do this, we realised that we needed to keep 30 principal components to retain 95% of the original variance. Thus, we used the PCA implementation from Scikit-Learn with 30 components.</p>
 <p align="justify">After performing PCA and printing out the original image and resulting image side-by-side, it was amazing how much of the detail from the original image was preserved in the transformed image. Furthermore, by performing PCA, we had reduced the size of the data down from 3GB to only a few hundred MB. This reduction in dimensionality from PCA will help to improve the efficiency of the model as well as reduce the computational overhead needed to train and run these models.</p>
 
+
+<h1><ins>Next Steps</ins></h1>
+As of right now, the CNN algorithm has already been implemented, and we are now going to focus on implementing the Decision Tree algorithm and K-Means algorithm to classify the images in our dataset. Implementing these other methods will give us something to compare the CNN implementation to, and it will be interesting to see how the accuracy of the CNN algorithm compares to the accuracy of both the Decision Tree and K-Means algorithms. For the next steps, we will focus on implementing these next two algorithms, and once they are implemented, we will focus on comparing and contrasting the differing algorithms and analysing the strengths and weaknesses of all three algorithms for the task presented in the problem statement above.
+
 <hr>
 
 
