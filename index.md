@@ -171,15 +171,15 @@ continent, genus, family, and sub-family.</p>
 
 | Name | Contribution |
 | --- | --- |
-| Jadon Co | •	Building and training CNN model <br> •	Applying PCA to dataset |
-| Robert Jeon | •	Managing GitHub page <br> •	Helping to build CNN model  |
-| Karan Patel | •	Data sourcing and cleaning <br> •	Applying PCA to dataset  |
-| David Qu |•	Data resizing and normalisation <br> •	Results and Discussion <br> •	Writing up midterm report  |
-| Jehyeok Woo | •	Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision and Recall) <br> •	Data visualisation for midterm report |
+| Jadon Co | •	Building and training CNN model <br> •	Applying PCA to dataset <br> •	Building and training Decision Tree model <br> •	Evaluation metrics for Decision Tree model |
+| Robert Jeon | •	Managing GitHub page <br> •	Helping to build CNN model <br> •	Building and training K-Means model <br> •	Evaluation metrics for K-Means model|
+| Karan Patel | •	Data sourcing and cleaning <br> •	Applying PCA to dataset <br> •	Analyzing K-Means Model <br> •	Editing data preprocessing section|
+| David Qu |•	Data resizing and normalisation <br> •	Results and Discussion <br> •	Writing up midterm report <br> •	Writing up final report <br> •	Conclusion  <br> •	Putting together slide deck and video presentation|
+| Jehyeok Woo | •	Evaluation metrics for CNN method (Confusion Matrix, F1 Score, Precision and Recall) <br> •	Data visualisation for midterm and final reports <br> •	Optimising hyperparameters for Decision Tree model <br> •	Reviewing all requirements are met |
 
 <h4><ins>Updated Gantt Chart</ins></h4>
 
-![Timeline](ExcelChart.png)
+![Timeline](NEW.GANTT.png)
 
 
 <h4><ins>References</ins></h4>
