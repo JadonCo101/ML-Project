@@ -84,9 +84,9 @@ continent, genus, family, and sub-family.</p>
 
 <h1><ins>Methods</ins></h1>
 <h2><i>Supervised Learning</i></h2>
-<p align="justify">For the midterm report, we have used convolutional neural networks as our supervised learning method. CNN is a popular method used for image classification in the computer vision space, and they have been used for tasks such as classifying flower types and analysing documents</p>
-<h3>CNN</h3>
+<p align="justify">For this project, we chose to use two differing supervised learning methods: Convolutional Neural Networks (CNNs) and Decision Tree. CNNs are commonly used for image classification in the realm of computer vision, and they have been used for various tasks such as classifying flower types and disease detection in the medical field or analysing documents. Aside from the CNN algorithm, we also decided to explore the usage of decision trees for image classification to see how it compares to CNN in terms of classifying snakes by their images.</p>
 
+<h3>CNN</h3>
 <p align="justify">To implement this method, we used the keras package to create the neural network. To cut down on computation time, we used 10 classes to test and train the model, and through our testing, we found that accuracy remained around 98 percent for test data and 88 percent for train data. Here is the structure we used for the model:</p>
 
 ![CNN Model](CNN.Plot.png)
@@ -101,6 +101,21 @@ continent, genus, family, and sub-family.</p>
 
 <h4><ins>Results and Discussion</ins></h4>
 <p align="justify">The model achieved an astounding accuracy level of 88.13%, and the precision, recall, and f1 score were 99.89%, 92.87%, and 96.30% respectively. These results indicate that the CNN model does extremely well in the task of classifying snakes based on image data, and the model’s ability to learn hierarchical features from images along with the utilisation of convolutional and pooling layers, regularisation, and activation functions seemed to contribute to its strong ability to accurately identify snakes based on their image data. If this model were to be refined even further, it is likely that there would be an even higher accuracy score and even better identification outcomes.</p><br>
+
+
+<h3>Decision Tree</h3>
+<p align="justify">As our second supervised learning model, we decided to use the Decision Tree algorithm since it is also traditionally used in the realm of image classification. For this implementation, we utilised the functions provided by the scikit-learn (sklearn) library, as this library is popular in the machine learning space. </p>
+<p align="justify">For this implementation, one of the major challenges that we faced was hyperparameter optimisation. The model ran extremely slowly, and it was difficult to select values for hyperparameters that would return satisfactory accuracy results. Despite our best efforts to optimise the hyperparameters, the test accuracy of our decision tree model remained around 29%. For our model, we had a maximum depth of XXX, and this value was determined through various experimentations and tuning. As seen in our confusion matrix and precision-recall curve below, the decision tree model struggled to accurately identify snakes by their species given their image.</p>
+
+![Confusion Matrix](CM.DT.png)
+![Precision-Recall Curve](PRC.DT.png)
+
+<p align="justify">To potentially enhance the performance of our implementation of the decision tree algorithm, we explored data processing techniques such as compression and normalisation. However, these methods of processing the data did very little to impact the performance of our model, and they did not greatly improve the accuracy of our implementation. Even though decision trees are known for their simplicity and relative ease of implementation, our findings illustrate that the data used in this case is not particularly suited for the decision tree model, as evident from the test accuracy that our model achieved. </p>
+<p align="justify">When comparing the results from our decision tree model with our CNN model, it is obvious that the CNN model extremely outperformed the decision tree model in terms of accuracy. This is expected, as the CNN model is known for being able to capture complex patterns in data with high accuracy. Because of this, it follows that when there are scenarios where fine-tuned modelling is required and where computational resources are available, the CNN model is much more suitable for achieving superior accuracy results when compared to the decision tree model.</p>
+
+<h4><ins>Results and Discussion</ins></h4>
+<p align="justify">Overall, even though decision trees are often favoured for their simplicity in implementation and relatively low need for computational resources, our findings, in this case, illustrate that the performance of the decision tree algorithm heavily depends on the nature and complexity of the data fed into the model. In our case, because the data required much more fine-grained predictions to be correctly classified, a CNN model offered superior results in comparison to the decision tree model. This concept can also be applied to other projects: When more specific predictions are required and when computation resources are not necessarily limited, the CNN model likely will provide more accurate results when compared to the decision tree model.</p>
+
 
 <h2><i>Supervised Learning</i></h2>
 <p align="justify">When first downloading our dataset, all of the snake species images were already separated out into their respective folders based on the label for the given snake species. Because of this, it is much easier to levrage unsupervised learning methods for the problem introduced in the problem statement above, as the number of clusters can be deterministically set for methods such as K-Means.</p>
