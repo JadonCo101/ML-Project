@@ -143,7 +143,7 @@ continent, genus, family, and sub-family.</p>
 <p align="justify">Overall, this model achieved a precision, recall, and f1 score of 61.46%, 67.09%, and 61.14% respectively. These results indicate that the K-Means model does relatively well at the task of classifying snakes based on image data, but it tended to struggle when the features such as background colour and texture were similar between varying species of snake. To some degree, there was a bit of overfitting in our model, as there was a relatively large gap between the accuracy of the training and testing datasets. If there were time to refine this model further, there would likely be an even higher accuracy score and clearer identification outcomes. </p>
 
 
-<h1><ins>Results and Discussion</ins></h1>
+<h1><ins>Analysis, Results, and Discussion</ins></h1>
 <p align="justify">The performance of the CNN model, Decision Tree model, and K-Means model on classifying snakes based on their species image were evaluated and the results are summarised in the table below:</p>
 
 | Model | Accuracy | Precision | Recall | F1 Score |
