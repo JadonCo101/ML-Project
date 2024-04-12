@@ -101,4 +101,4 @@ Contribution Table:
 
 
 Final Project Video:
-[![Watch the video](https://drive.google.com/file/d/1o2YeSdN6hJlSjoTUFAjQNirKAgA94HMa/view)]
+[![Final Project Video]](https://drive.google.com/file/d/1o2YeSdN6hJlSjoTUFAjQNirKAgA94HMa/view)
