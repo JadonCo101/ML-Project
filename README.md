@@ -94,3 +94,17 @@ Contribution Table:
 
 ![Proposed Timeline](https://github.com/JadonCo101/ML-Project/blob/cf9276496f3589cd852cccc02df409e7b9389cc8/excelchart.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
+Final Project Video:
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://drive.google.com/file/d/1o2YeSdN6hJlSjoTUFAjQNirKAgA94HMa/view)
