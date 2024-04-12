@@ -100,11 +100,5 @@ Contribution Table:
 
 
 
-
-
-
-
-
-
 Final Project Video:
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://drive.google.com/file/d/1o2YeSdN6hJlSjoTUFAjQNirKAgA94HMa/view)
+[![Watch the video]](https://drive.google.com/file/d/1o2YeSdN6hJlSjoTUFAjQNirKAgA94HMa/view)
